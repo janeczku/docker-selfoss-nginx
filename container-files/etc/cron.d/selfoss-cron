@@ -1,0 +1,6 @@
+# SELFOSS REFRESH
+# Runs every 30 minutes
+# */30 * * * * /usr/bin/curl -s -S -m 3300 http://127.0.0.1/update >>/tmp/selfoss_update.log 2>&1
+*/30 * * * * su - www -c "/usr/bin/php /data/www/default/update.php  >>/data/logs/selfoss_update.log 2>&1"
+
+
