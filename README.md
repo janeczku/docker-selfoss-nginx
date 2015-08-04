@@ -17,7 +17,7 @@ The `/data` volume is initialized on first launch with all necessary files allow
 
 ### Run the image
 
-    docker run -d --name selfoss -p 8080:80 janeczku/docker-selfoss
+    docker run -d --name selfoss -p 8080:80 janeczku/selfoss
 
 ### Configuration and maintenance
 
