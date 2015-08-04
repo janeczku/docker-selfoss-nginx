@@ -21,9 +21,9 @@ The `/data` volume is initialized on first launch with all necessary files allow
 
 ### Configuration and maintenance
 
-The configuration and data files are located on the persisted volume under `/data/www/default`. To edit the configuration you can use a separate container which mounts the `/data volume`:
+The Selfoss configuration and data are located on the persisted volume in `/data/www/default`. To edit the configuration file you can attach a console to the running container and then edit the `config.ini` file:
 
-	docker run -ti --volumes-from=selfoss --rm busybox
+	docker exec -ti selfoss bash
 	[root@selfoss] vi /data/www/default/config.ini
 	
 For configuration directives, follow the [selfoss documentation](http://selfoss.aditu.de/#documentation). Generally no changes to the configuration are required. However changing the configuration is necessary to make selfoss password protected.
