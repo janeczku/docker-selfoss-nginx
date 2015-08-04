@@ -2,7 +2,7 @@
 
 This Dockerfile provides the [janeczku/selfoss](https://registry.hub.docker.com/u/janeczku/selfoss/) Selfoss image based on CentOS 7 and a [high performant Nginx and PHP5-FPM stack](https://github.com/million12/docker-nginx-php).
 
-## About selfoss
+## About Selfoss
 
 [Selfoss](http://selfoss.aditu.de/) is a web-based mobile ready RSS reader and aggregator with built-in support for fulltext RSS scraping.
 
@@ -26,8 +26,8 @@ The Selfoss configuration and data are located on the persisted volume in `/data
 	docker exec -ti selfoss bash
 	[root@selfoss] vi /data/www/default/config.ini
 	
-For configuration directives, follow the [selfoss documentation](http://selfoss.aditu.de/#documentation). Generally no changes to the configuration are required. However changing the configuration is necessary to make selfoss password protected.
-Selfoss will automatically upgrade the database. For other maintenance tasks during upgrades, refer to the [selfoss documentation](http://selfoss.aditu.de/#documentation).
+For configuration directives, follow the [Selfoss documentation](http://selfoss.aditu.de/#documentation). Generally no changes to the configuration are required. However changing the configuration is necessary to make Selfoss password protected.
+Selfoss will automatically upgrade the database. For other maintenance tasks during upgrades, refer to the [Selfoss documentation](http://selfoss.aditu.de/#documentation).
 
 ## Updating the feeds
 
